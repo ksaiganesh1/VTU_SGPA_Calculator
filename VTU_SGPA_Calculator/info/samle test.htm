@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h3>ENTER YOUR FOURTH SEM MARKS</h3>
+    <h4><tt>SUBJECT:- 1</tt></h4>
+    <h5><tt>18***51</tt></h5>
+    <input type="text" id="sub1" value="Some text..." />
+    <h4><tt>SUBJECT:- 2</tt></h4>
+    <h5><tt>18**52</tt></h5>
+    <input type="text" id="sub2" value="Some text..." />
+    <h4><tt>SUBJECT:- 3</tt></h4>
+    <h5><tt>18**53</tt></h5>
+    <input type="text" id="sub3" value="Some text..." />
+    <h4><tt>SUBJECT:- 4</tt></h4>
+    <h5><tt>18**54</tt></h5>
+    <input type="text" id="sub4" value="Some text..." />
+    <h4><tt>SUBJECT:- 5</tt></h4>
+    <h5><tt>18**55</tt></h5>
+    <input type="text" id="sub5" value="Some text..." />
+    <h4><tt>SUBJECT:- 6</tt></h4>
+    <h5><tt>18**56</tt></h5>
+    <input type="text" id="sub6" value="Some text..." />
+    <h4><tt>LAB:- 1</tt></h4>
+    <h5><tt>18***57</tt></h5>
+    <input type="text" id="sub7" value="Some text..." />
+    <h4><tt>LAB:- 2</tt></h4>
+    <h5><tt>18***58</tt></h5>
+    <input type="text" id="sub8" value="Some text..." />
+    <h4><tt>EVS:</tt></h4>
+    <h5><tt>18***49</tt></h5>
+    <input type="text" id="sub9" value="Some text..." />
+
+    <p>Click the "Try it" button to get the text in the text field.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+    <p>total is:</p>
+    <script>
+      function myFunction() {
+        var s1 = parseInt(document.getElementById("sub1").value);
+        var s2 = parseInt(document.getElementById("sub2").value);
+        var s3 = parseInt(document.getElementById("sub3").value);
+        var s4 = parseInt(document.getElementById("sub4").value);
+        var s5 = parseInt(document.getElementById("sub5").value);
+        var s6 = parseInt(document.getElementById("sub6").value);
+        var s7 = parseInt(document.getElementById("sub7").value);
+        var s8 = parseInt(document.getElementById("sub8").value);
+        var s9 = parseInt(document.getElementById("sub9").value);
+
+        var total = (document.getElementById("demo").innerHTML =
+          s1 + s2 + s3 + s4 + s5 + s6 + s7 + s8 + s9);
+
+        var percentage = (document.getElementById("demo").innerHTML =
+          "the percentage is" + (total / 900) * 100);
+
+        document.write(total);
+
+        document.write(percentage);
+      }
+    </script>
+  </body>
+</html>
